@@ -1,8 +1,8 @@
 server:
   port: 8010
-max-http-header-size: 1048576  #解决 请求头 过大 大脑壳问题
+  max-http-header-size: 1048576  #解决 请求头 过大 大脑壳问题
   tomcat: 
-    max-http-post-size: 1048576
+    max-http-post-size: 1048576  
 spring:
   application:
     name: aigou-common
