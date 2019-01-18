@@ -20,3 +20,15 @@ zuul:
      common.path: /common/**
   ignored-services:  "*" #   可以一个一个配置,但是很麻烦,用*来通配 *代替 上面的多个 提供服务的
   prefix: "/services"  #加上统一前缀
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+ribbon:
+  ReadTimeout: 15000
+  ConnectTimeout: 60000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1
